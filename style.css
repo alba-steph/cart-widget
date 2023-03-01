@@ -1,3 +1,74 @@
 body {
   background-color: thistle;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.widget {
+  width: 675px;
+  height: 400px;
+  /* width: auto;
+  height: auto;
+  aspect-ratio: 675/400;
+  max-width: 100%;
+  max-height: 100%; */
+  background-color: ivory;
+  border-radius: 15px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-areas:
+    "a e"
+    "b e"
+    "c e"
+    "d e";
+  grid-template-columns: 3fr 2fr;
+}
+
+.widget__offer {
+  grid-area: a;
+  background-color: gray;
+}
+
+.widget__progress {
+  grid-area: b;
+}
+
+.widget__progress--bar {
+  height: 5px;
+  width: 30%;
+  background-color: thistle;
+  border-radius: 10px;
+}
+
+.widget__timer {
+  grid-area: c;
+}
+
+.widget__coupon {
+  grid-area: d;
+}
+
+.widget__graphic {
+  grid-area: e;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  /* object-fit: cover; */
+}
+
+* {
+  box-sizing: border-box;
 }
