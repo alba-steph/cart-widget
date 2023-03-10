@@ -45,6 +45,10 @@ main {
 .widget__text-timer {
 }
 
+.widget__text-timer--end {
+  color: thistle;
+}
+
 .widget__text-coupon {
   border-radius: 0.7vmin;
   border-style: dashed;
