@@ -1,5 +1,5 @@
 body {
-  background-color: thistle;
+  background-color: rgb(72, 70, 72);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
@@ -13,58 +13,55 @@ main {
 }
 
 .widget {
-  width: 675px;
-  height: 400px;
-  /* width: auto;
-  height: auto;
-  aspect-ratio: 675/400;
-  max-width: 100%;
-  max-height: 100%; */
-  background-color: ivory;
-  border-radius: 15px;
+  height: 30vmin;
+  max-width: 44vmin;
+  background-color: white;
+  border-radius: 1vmin;
   overflow: hidden;
-
-  display: grid;
-  grid-template-areas:
-    "a e"
-    "b e"
-    "c e"
-    "d e";
-  grid-template-columns: 3fr 2fr;
+  display: flex;
+  font-size: 2vmin;
 }
 
-.widget__offer {
-  grid-area: a;
-  background-color: gray;
+.widget__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3.5vmin;
 }
 
-.widget__progress {
-  grid-area: b;
+.widget__text > * {
 }
 
-.widget__progress-bar {
-  height: 5px;
-  width: 30%;
-  background-color: thistle;
-  border-radius: 10px;
+.widget__text-offer {
 }
 
-.widget__timer {
-  grid-area: c;
+.widget__text-progress {
+  height: 0.7vmin;
+  width: 9vmin;
+  background-color: rgb(223, 218, 223);
+  border-radius: 1vmin;
 }
 
-.widget__coupon {
-  grid-area: d;
+.widget__text-timer {
+}
+
+.widget__text-coupon {
+  border-radius: 0.7vmin;
+  border-style: dashed;
+  border-color: rgb(223, 130, 42);
+  color: rgb(223, 130, 42);
+  padding: 1vmin;
+  font-size: 1vmin;
 }
 
 .widget__graphic {
-  grid-area: e;
-  height: 100%;
 }
 
 .widget__graphic-image {
-  width: auto;
-  height: 400px;
+  height: 100%;
+}
+
+@media (max-width: 480px) {
 }
 
 * {
